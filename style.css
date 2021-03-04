@@ -75,64 +75,20 @@ section{
     align-items: center;
 }
  /* animating the web developer part  */
-.animate{
-    width: 0ch;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: text 8s steps(25) infinite alternate;
-    border-right: 3px solid;
-}
 
-@keyframes text{
-    0%{
-        width:0ch;
-    }
-    60%{
-        width: 25ch;
-    }
-}
-
-/* @keyframes text2 {
-    0%, 50%, 100% {
-      width: 0ch;
-    }
-    
-    60%, 90% {
-      width: 16ch;
-    }
+ .txt-type > .txt {
+    border-right: 0.2rem solid rgba(255,255,255, .8);
+    animation: blinkTextCursor 500ms steps(40) infinite normal;
   }
-  @keyframes text1 {
-    0%, 50%, 100% {
-      width: 0ch;
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: rgba(255,255,255 .8);
     }
-    10%, 40% {
-      width: 25ch;
+    to {
+      border-right-color: transparent;
     }
   }
 
-  .text_1 {
-    animation: text1;
-  }
-  .text_2 {
-    animation: text2;
-  }
-  .text_1, .text_2 {
-    overflow: hidden;
-    white-space: nowrap;
-    display: inline-block;
-    position: relative;
-    animation-duration: 20s;
-    animation-timing-function: steps(16, end);
-    animation-iteration-count: infinite;
-  }
-  .text_1::after, .text_2::after {
-    content: "|";
-    position: absolute;
-    right: 0;
-    animation: caret infinite;
-    animation-duration: 1s;
-    animation-timing-function: steps(1, end);
-  } */
 /* Name styling */
 .banner h2{
     font-size: 2.5em;
@@ -170,10 +126,6 @@ section{
     letter-spacing: 2px;
     font-weight: 500;
 }
-
-/* .about{
-    background: #bcbdb7;
-} */
 
 /* about me part */
 .content{
