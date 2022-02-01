@@ -1,2 +1,3 @@
 # BhishitDave.github.io
-domian name bhishitdave.tech
+domian name bhishitdave.me
+
